@@ -23,10 +23,12 @@ for (var i = 0; i < num_clicks.length; i++) {
 			$('#container img').attr("src", img_src[num]);
 			$('#container img').click(function(e){
 				num_clicks[num]++;
-				$('#container .result').html("Number of clicks: " + num_clicks[num]);
+				$('#container .result').html("Number of clicks: " 
+				 num_clicks[num]);
 			});
 
-		$('#container .result').html("Number of clicks: " + num_clicks[num]);
+		$('#container .result').html("Number of clicks: " 
+			+ num_clicks[num]);
 
 		}
 	})(i));
